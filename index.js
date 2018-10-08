@@ -52,7 +52,8 @@ app.use("/api/users", userRouter);
 app.use(express.static('./public'));
 
 app.get('/', (req,res) => {
-  res.sendFile('./public/index.html');
+  // res.sendFile('./public/index.html');
+  res.send('tk hotgirl server');
 });
 
 mongoose.connect(config.mongoPath, err => {
